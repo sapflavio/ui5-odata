@@ -1,0 +1,18 @@
+<mvc:View controllerName="ovly.odata.controller.S0" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<SearchField search="onSearch" />
+						<List id="list" items="{fonte>/Products}">
+							<items>
+								<StandardListItem title="{fonte>ID}" description="{fonte>Name}" info="{fonte>Price}" />
+							</items>
+						</List>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
